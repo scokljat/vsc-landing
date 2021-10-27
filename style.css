@@ -10,6 +10,7 @@ body {
   margin: 0;
   padding: 0;
   width: 100%;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
 }
 .menuWrap {
   display: flex;
@@ -17,6 +18,9 @@ body {
   align-items: center;
   background-color: #2c2c32;
   color: #d0d0d1;
+}
+.title {
+  display: flex;
 }
 .hamburgerMenu {
   display: inline-block;
@@ -162,7 +166,7 @@ body {
   flex-direction: column;
 }
 .debug img {
-  margin-left: 20px;
+  margin-left: 40px;
 }
 .opportunities2 {
   display: flex;
@@ -318,12 +322,20 @@ body {
 .licenseWrap a,
 .features a,
 .moreFeatures a,
-.firstCom a {
+.user a {
   color: #0796f2;
   text-decoration: none;
   margin-right: 2px;
 }
-
+.user {
+  display: flex;
+}
+.userimage img {
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  padding: 10px;
+}
 @media (min-width: 578px) {
   .menuWrap {
     display: none;
@@ -422,14 +434,8 @@ body {
     flex-direction: row;
     margin: 0 100px;
   }
-  .firstCom {
+  .user {
     margin-right: 50px;
-  }
-  .secondCom {
-    margin: 0 50px;
-  }
-  .thirdCom {
-    margin-left: 50px;
   }
   .featuresWrap {
     grid-template-columns: 45% 55%;
